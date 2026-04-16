@@ -1,12 +1,24 @@
-# OS Assignment 2: System Info Collector
+# System Resource Monitoring
 
-**Student Name:** Youssef Walid Elsayed Zaki  
-**Student ID:** 2401245448
+A robust multi-process utility designed to interface with the Linux kernel and fetch real-time hardware and system statistics. 
 
-## Description
-This program demonstrates process management in Linux using the `fork-exec-wait` model. It spawns four distinct child processes to execute system commands (`uname`, `uptime`, `df`, and `free`) and uses `waitpid()` to ensure the parent process synchronizes the output correctly.
+## 🧠 Key Concepts Explored
+* **Process Spawning:** Utilizing `fork()` to create independent execution paths.
+* **Program Execution:** Using `execvp()` to replace child process images with system utilities.
+* **Synchronization:** Implementing `waitpid()` to ensure the parent process manages child lifecycle and output order correctly.
+* **Error Handling:** Robust checks for fork failures and execution stubs.
 
-## Instructions
-1. Run `make` to compile the source code using the provided Makefile.
-2. Execute the program by typing `./sysinfo`.
-3. Use `make clean` to remove the binary file.
+## 🛠 Features
+The tool spawns four distinct child processes to capture:
+1. **Kernel Version:** via `uname -a`
+2. **System Uptime:** via `uptime`
+3. **Disk Utilization:** via `df -h`
+4. **Memory Stats:** via `free -h`
+
+## 🚀 Usage
+1. Compile the program:
+   ```bash
+   make
+   ./sysinfo
+   ```
+   ---
