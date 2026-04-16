@@ -19,6 +19,9 @@ The tool spawns four distinct child processes to capture:
 1. Compile the program:
    ```bash
    make
-   ./sysinfo
    ```
-   ---
+2. Run the monitor:
+ ```bash
+  ./sysinfo
+ ```
+ ---
