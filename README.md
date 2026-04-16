@@ -31,3 +31,4 @@ Ensure you have a Linux environment with `gcc` and `make` installed:
 ```bash
 sudo apt update
 sudo apt install build-essential
+```
