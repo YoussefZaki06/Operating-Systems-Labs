@@ -21,7 +21,7 @@ The tool spawns four distinct child processes to capture:
    make
    ```
 2. Run the monitor:
- ```bash
-  ./sysinfo
- ```
+    ```bash
+    ./sysinfo
+    ```
  ---
