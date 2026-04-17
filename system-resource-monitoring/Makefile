@@ -1,4 +1,3 @@
-# Makefile for OS Assignment 2
 CC = gcc
 CFLAGS = -Wall -Wextra
 
